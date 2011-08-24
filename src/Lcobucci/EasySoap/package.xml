@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>EasySoap</name>
+ <channel>lcobucci.github.com</channel>
+ <summary>Annotation based SOAP webservices library for PHP</summary>
+ <description>This library provides a fast and easy way to create SOAP webservices</description>
+ <lead>
+  <name>Luís Otávio Cobucci Oblonczyk</name>
+  <user>lcobucci</user>
+  <email>lcobucci@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-08-24</date>
+ <time>02:51:28</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+ <notes>
+Library created
+ </notes>
+ <contents>
+  <dir baseinstalldir="Lcobucci/EasySoap" name="/">
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="cf8321782d59e577d87cc463a0214a6b" name="Annotations/WebServiceAnnotation.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="68fd34093e2c3c1ae72b09bcb35727a0" name="Annotations/WebServiceMethodAnnotation.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="47ac56b2605483c70755829bb1d1093b" name="Annotations/WebServicePropertyAnnotation.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="1b3743db4002aec8889efd257e093450" name="Core/SoapServer.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="43cb1de56399e8acd6be31f207c6ded8" name="Core/WsdlClassMap.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="58572f30c252d090204cccd7471cad9c" name="Core/WsdlDocument.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="0669d62911de9ba51ab8e4c1c59a9bf5" name="Core/WsdlException.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="1073abc80f6f6d884f83f5651537846f" name="Core/WsdlGenerator.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="893ef830f54f7a40cdcaa95893b4744d" name="Core/WsdlMethod.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="ab40a46881bf850b688c916419c855fe" name="Core/WsdlTypeConverter.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="89d02607c6796bcfe3766e5c92f87516" name="wsdl-viewer.xsl.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Annotation</name>
+    <channel>lcobucci.github.com</channel>
+    <min>0.1.0</min>
+    <max>0.1.0</max>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-08-24</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+Library created
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-08-24</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+Library created
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.2</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-08-24</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+Library created
+   </notes>
+  </release>
+ </changelog>
+</package>

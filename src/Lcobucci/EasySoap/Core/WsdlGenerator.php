@@ -3,6 +3,7 @@ namespace Lcobucci\EasySoap\Core;
 
 use Lcobucci\EasySoap\Annotations\WebServiceAnnotation;
 use Mindplay\Annotation\Core\Annotations;
+use Mindplay\Annotation\Core\AnnotationException;
 use \ReflectionClass;
 use \ReflectionMethod;
 
@@ -28,12 +29,25 @@ class WsdlGenerator
 	 */
 	protected $classMap;
 
+	private static function createAnnotationsAliases()
+	{
+	    try {
+    	    Annotations::addAlias('WebService', 'Lcobucci\EasySoap\Annotations\WebServiceAnnotation');
+    	    Annotations::addAlias('WebServiceMethod', 'Lcobucci\EasySoap\Annotations\WebServiceMethodAnnotation');
+    	    Annotations::addAlias('WebServiceProperty', 'Lcobucci\EasySoap\Annotations\WebServicePropertyAnnotation');
+	    } catch (AnnotationException $e) {
+	        // Ignored
+	    }
+	}
+
 	/**
 	 * @param string $className
 	 * @param string $endpoint
 	 */
 	public function __construct($className, $endpoint = null)
 	{
+	    self::createAnnotationsAliases();
+
 		$this->classMap = new WsdlClassMap();
 		$this->class = new ReflectionClass($className);
 		$this->endpoint = $endpoint;

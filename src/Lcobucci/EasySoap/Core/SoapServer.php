@@ -151,7 +151,7 @@ class SoapServer
 	protected function createDocumentation()
 	{
 		$xslt = new XSLTProcessor();
-		$xslt->importStylesheet(new SimpleXMLElement(__DIR__ . '/../../../../resources/wsdl-viewer.xsl', null, true));
+		$xslt->importStylesheet(new SimpleXMLElement(__DIR__ . '/../wsdl-viewer.xsl.php', null, true));
 
 		return $xslt->transformToXml(new SimpleXMLElement($this->getWsdlUrl(), null, true));
 	}
