@@ -48,7 +48,7 @@ To create a webservice you must create a PHP class (with namespace or not) that 
     {
     }
     
-And set a method to be exposed with the **WebServiceMethod** annotation:
+And set at least one method to be exposed with the **WebServiceMethod** annotation:
 
     (Lcobucci/Tools/Services/Calculator.php)
     <?php
