@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
  <name>EasySoap</name>
  <channel>lcobucci.github.com</channel>
- <summary>Annotation based SOAP webservices library for PHP</summary>
- <description>This library provides a fast and easy way to create SOAP webservices</description>
+ <summary>Annotation based SOAP webservices</summary>
+ <description>Provides a fast and easy way to create SOAP webservices</description>
  <lead>
   <name>Luís Otávio Cobucci Oblonczyk</name>
   <user>lcobucci</user>
   <email>lcobucci@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2011-08-24</date>
- <time>02:51:28</time>
+ <date>2011-09-19</date>
+ <time>11:15:39</time>
  <version>
   <release>0.1.0</release>
   <api>0.1.0</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>alpha</release>
+  <api>alpha</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
  <notes>
@@ -51,7 +54,6 @@ Library created
     <name>Annotation</name>
     <channel>lcobucci.github.com</channel>
     <min>0.1.0</min>
-    <max>0.1.0</max>
    </package>
   </required>
  </dependencies>
@@ -63,40 +65,10 @@ Library created
     <api>0.1.0</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>alpha</release>
+    <api>alpha</api>
    </stability>
-   <date>2011-08-24</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
-   <notes>
-Library created
-   </notes>
-  </release>
-  <release>
-   <version>
-    <release>0.1.1</release>
-    <api>0.1.0</api>
-   </version>
-   <stability>
-    <release>beta</release>
-    <api>beta</api>
-   </stability>
-   <date>2011-08-24</date>
-   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
-   <notes>
-Library created
-   </notes>
-  </release>
-  <release>
-   <version>
-    <release>0.1.2</release>
-    <api>0.1.0</api>
-   </version>
-   <stability>
-    <release>beta</release>
-    <api>beta</api>
-   </stability>
-   <date>2011-08-24</date>
+   <date>2011-09-19</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
    <notes>
 Library created

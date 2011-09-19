@@ -9,7 +9,7 @@ Installation
 Type the following commands in your terminal:
 
   * `pear channel-discover lcobucci.github.com`
-  * `pear install lcobucci/EasySoap-beta`
+  * `pear install lcobucci/EasySoap-alpha`
 
 Make sure that PEAR is in your include_path.
 
@@ -28,9 +28,10 @@ The first step you have to do is to configure the annotation's cache path of you
     <?php
     // Register your autoloader here
         
-    use Mindplay\Annotation\Core\Annotations;
+    use \Mindplay\Annotation\Core\Annotations;
+    use \Mindplay\Annotation\Cache\ApcCache;
     
-    Annotations::$config['cachePath'] = '/tmp/myProject'; // Make sure this path exists and it's writable
+    Annotations::$config['cache'] = new ApcCache(); // Make sure you have APC (you can use FileCache instead)
     
 Basic Usage
 -----------
