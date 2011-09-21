@@ -4,6 +4,7 @@ namespace Lcobucci\EasySoap\Core;
 use \XSLTProcessor;
 use \Exception;
 use \SimpleXMLElement;
+use \ReflectionMethod;
 
 class SoapServer
 {
@@ -29,8 +30,9 @@ class SoapServer
 
 	/**
 	 * @param string $className
+	 * @param array $constructorArgs
 	 */
-	public function handle($className)
+	public function handle($className, array $constructorArgs = null)
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 			if (isset($_GET['wsdl'])) {
@@ -39,19 +41,19 @@ class SoapServer
 				echo $this->createDocumentation();
 			}
 		} else {
-			$this->handleSoapCalls($className);
+			$this->handleSoapCalls($className, $constructorArgs);
 		}
 	}
 
 	/**
 	 * @param string $className
 	 */
-	protected function handleSoapCalls($className)
+	protected function handleSoapCalls($className, array $constructorArgs = null)
 	{
 		$options = array('classmap' => $this->createClassMap($className));
 
 		$server = $this->getSoapServer($this->getWsdlUrl(), array_merge($this->options, $options));
-		$server->setClass($className);
+		$this->configureClass($server, $className, $constructorArgs);
 
 		if ($this->persistSessions) {
 			$server->setPersistence(SOAP_PERSISTENCE_SESSION);
@@ -72,6 +74,21 @@ class SoapServer
 			    </SOAP-ENV:Envelope>';
 
 		    echo $xmlstr;
+		}
+	}
+
+	/**
+	 * @param \SoapServer $server
+	 * @param string $className
+	 * @param array $constructorArgs
+	 */
+	protected function configureClass(\SoapServer $server, $className, array $constructorArgs = null)
+	{
+		if (!is_null($constructorArgs)) {
+			$method = new ReflectionMethod($server, 'setClass');
+			$method->invokeArgs($server, array_merge(array($className), $constructorArgs));
+		} else {
+			$server->setClass($className);
 		}
 	}
 
