@@ -109,7 +109,7 @@ class WsdlGenerator
 		$methods = array();
 
 		foreach ($this->class->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-			if ($this->willBeExposed($method)) {
+			if (self::willBeExposed($method)) {
 				$methods[] = new WsdlMethod($method);
 			}
 		}
@@ -128,7 +128,7 @@ class WsdlGenerator
 	 * @param \ReflectionMethod $method
 	 * @throws Lcobucci\EasySoap\Core\WsdlException
 	 */
-	protected function willBeExposed(ReflectionMethod $method)
+	public static function willBeExposed(ReflectionMethod $method)
 	{
 		$annotations = Annotations::ofMethod(
 			$method,
