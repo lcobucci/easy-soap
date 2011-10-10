@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
-    http://pear.php.net/dtd/tasks-1.0.xsd
-    http://pear.php.net/dtd/package-2.0
-    http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
  <name>EasySoap</name>
  <channel>lcobucci.github.com</channel>
  <summary>Annotation based SOAP webservices</summary>
@@ -13,11 +10,11 @@
   <email>lcobucci@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2011-09-19</date>
- <time>11:15:39</time>
+ <date>2011-10-10</date>
+ <time>10:38:19</time>
  <version>
-  <release>0.1.0</release>
-  <api>0.1.0</api>
+  <release>0.1.2</release>
+  <api>0.1.2</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -25,18 +22,18 @@
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
  <notes>
-Library created
+__toString() added to method annotation and the method willBeExposed() is now public and static
  </notes>
  <contents>
   <dir baseinstalldir="Lcobucci/EasySoap" name="/">
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="cf8321782d59e577d87cc463a0214a6b" name="Annotations/WebServiceAnnotation.php" role="php" />
-   <file baseinstalldir="Lcobucci/EasySoap" md5sum="68fd34093e2c3c1ae72b09bcb35727a0" name="Annotations/WebServiceMethodAnnotation.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="8ce7ee18752eb89496a98c808b54d449" name="Annotations/WebServiceMethodAnnotation.php" role="php" />
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="47ac56b2605483c70755829bb1d1093b" name="Annotations/WebServicePropertyAnnotation.php" role="php" />
-   <file baseinstalldir="Lcobucci/EasySoap" md5sum="1b3743db4002aec8889efd257e093450" name="Core/SoapServer.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="697215a6d7c4a7dd820105e938cdc9f1" name="Core/SoapServer.php" role="php" />
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="43cb1de56399e8acd6be31f207c6ded8" name="Core/WsdlClassMap.php" role="php" />
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="58572f30c252d090204cccd7471cad9c" name="Core/WsdlDocument.php" role="php" />
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="0669d62911de9ba51ab8e4c1c59a9bf5" name="Core/WsdlException.php" role="php" />
-   <file baseinstalldir="Lcobucci/EasySoap" md5sum="1073abc80f6f6d884f83f5651537846f" name="Core/WsdlGenerator.php" role="php" />
+   <file baseinstalldir="Lcobucci/EasySoap" md5sum="c0a309ba9555d259b2f03886d74becce" name="Core/WsdlGenerator.php" role="php" />
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="893ef830f54f7a40cdcaa95893b4744d" name="Core/WsdlMethod.php" role="php" />
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="ab40a46881bf850b688c916419c855fe" name="Core/WsdlTypeConverter.php" role="php" />
    <file baseinstalldir="Lcobucci/EasySoap" md5sum="89d02607c6796bcfe3766e5c92f87516" name="wsdl-viewer.xsl.php" role="php" />
@@ -72,6 +69,36 @@ Library created
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
    <notes>
 Library created
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-09-21</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+Added a way to inject params into your webservice (using constructor injection)
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.2</release>
+    <api>0.1.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-10-10</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+__toString() added to method annotation and the method willBeExposed() is now public and static
    </notes>
   </release>
  </changelog>
