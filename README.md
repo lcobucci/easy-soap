@@ -3,6 +3,8 @@ Lcobucci\EasySoap
 
 PHP library to create SOAP webservices
 
+**THIS PROJECT IS NO LONGER MAINTAINED**
+
 Installation
 ------------
 
